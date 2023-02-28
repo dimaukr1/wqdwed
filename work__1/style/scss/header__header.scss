@@ -1,0 +1,184 @@
+.header {* {
+	overflow-y: hidden;
+   }
+    * {overflow-y: hidden;}
+    &__header {
+        position: relative;
+        z-index: 50;
+        &__content {
+         background:  rgb(255, 166, 0);
+         font-weight: bold;
+         position: relative;
+         z-index: 45;
+         border-bottom: 1px solid gray;
+        }
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo {
+            align-self: center;
+            max-width: 160px;
+             img {
+                width: 100%;
+                padding: 0 0 5px 0;
+            }
+            &__text {
+                font-size: 12.2px;
+            }
+        }
+        
+        .header__header__menu {
+            display: flex;
+            
+           .menu__link {
+         padding: 32px 8px 28px 8px;
+          font-size: 17px;
+          line-height: 24px;
+          
+          a {color: #000; }
+        
+           }
+           .menu__link__button {
+            padding: 0 0 0 8px;
+           
+            align-self: center;
+          a {  color: #000;}
+            button  {
+                border-radius: 30px;
+                background: rgb(158, 19, 19);
+                p {
+                   
+                    align-self: center;
+                    font-size: 17px;
+                    padding: 5.5px 14.5px;
+                    font-weight: bold;
+                    color: white;
+                }
+               
+            }
+          }
+         
+        }
+            
+        
+            @media(max-width: 715px) {
+
+             
+                position: fixed;
+                width: 100%;
+               height: 80px;
+                z-index: 50;
+                top: 0;
+                left: 0;
+                
+                ::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                 
+                  z-index: 1;
+                }
+               
+                .NavBurger {
+                    align-items: center;
+                }
+                .burger__menu {
+                    
+                  display: block;
+                  position: relative;
+                  align-self: center;
+                  width: 30px;
+                  height: 20px;
+                }
+                .burger__menu::after,
+                .burger__menu::before {
+                  content: "";
+                  background: yellow;
+                  position: absolute;
+                  height: 2px;
+                  width: 100%;
+                  left: 0;
+                }
+                .header__header__logo
+                {
+                    padding: 10px 0;
+                }
+                .burger__menu span {
+                  position: absolute;
+                  background: yellow;
+                  left: 0;
+                  width: 100%;
+                  height: 2px;
+                  top: 9px;
+                  z-index: 0;
+                }
+                .burger__menu::before {
+                    top: 0;
+                  }
+                  .burger__menu::after {
+                    bottom: 0;
+                  }
+                  
+                 
+                  .header__header__menu {
+                      position: fixed;
+                      background: rgb(60, 60, 165);
+                      width: 100%;
+                      height: 200%;
+                      top:  65.6px;
+                      left: -100%;
+                      padding: 0px 0 0 0;
+                      z-index: 0;
+                      transition-duration:0.5s ;
+                      flex-direction: column;
+                      text-align: center;
+                    }  
+                  
+                   .header__header__menu {
+                    padding: 40px 0 0 0;
+                    display: flex;
+                    
+                   .menu__link {
+                    
+                 padding: 9px 8px 9px 8px;
+                  font-size: 21px;
+                  line-height: 24px;
+                  
+                  a {color: white; }
+                
+                   }
+                   .menu__link__button {
+                    padding: 0 0 0 8px;
+                   
+                    align-self: center;
+                  a {  color: #000;}
+                    button  {
+                        border-radius: 30px;
+                        background: rgb(158, 19, 19);
+                        p {
+                           
+                            align-self: center;
+                            font-size: 17px;
+                            padding: 5.5px 14.5px;
+                            font-weight: bold;
+                            color: white;
+                        }
+                        font-size: 21px;
+                       margin: 9px 0 0 0;
+                    }
+                  }
+                 
+                }
+                   .Active {
+                   left: 0;
+                   }
+               
+         }
+        
+    }
+}

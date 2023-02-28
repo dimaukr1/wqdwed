@@ -1,0 +1,194 @@
+.header * {
+  overflow-y: hidden;
+}
+.header * {
+  overflow-y: hidden;
+}
+.header__header {
+  position: relative;
+  z-index: 50;
+}
+.header__header__content {
+  background: rgb(255, 166, 0);
+  font-weight: bold;
+  position: relative;
+  z-index: 45;
+  border-bottom: 1px solid gray;
+}
+.header__header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__header__logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 160px;
+}
+.header__header__logo img {
+  width: 100%;
+  padding: 0 0 5px 0;
+}
+.header__header__logo__text {
+  font-size: 12.2px;
+}
+.header__header .header__header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__header .header__header__menu .menu__link {
+  padding: 32px 8px 28px 8px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.header__header .header__header__menu .menu__link a {
+  color: #000;
+}
+.header__header .header__header__menu .menu__link__button {
+  padding: 0 0 0 8px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.header__header .header__header__menu .menu__link__button a {
+  color: #000;
+}
+.header__header .header__header__menu .menu__link__button button {
+  border-radius: 30px;
+  background: rgb(158, 19, 19);
+}
+.header__header .header__header__menu .menu__link__button button p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 17px;
+  padding: 5.5px 14.5px;
+  font-weight: bold;
+  color: white;
+}
+@media (max-width: 715px) {
+  .header__header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 50;
+    top: 0;
+    left: 0;
+  }
+  .header__header ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .header__header .NavBurger {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__header .burger__menu {
+    display: block;
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 30px;
+    height: 20px;
+  }
+  .header__header .burger__menu::after,
+.header__header .burger__menu::before {
+    content: "";
+    background: yellow;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+  }
+  .header__header .header__header__logo {
+    padding: 10px 0;
+  }
+  .header__header .burger__menu span {
+    position: absolute;
+    background: yellow;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    z-index: 0;
+  }
+  .header__header .burger__menu::before {
+    top: 0;
+  }
+  .header__header .burger__menu::after {
+    bottom: 0;
+  }
+  .header__header .header__header__menu {
+    position: fixed;
+    background: rgb(60, 60, 165);
+    width: 100%;
+    height: 200%;
+    top: 65.6px;
+    left: -100%;
+    padding: 0px 0 0 0;
+    z-index: 0;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .header__header .header__header__menu {
+    padding: 40px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__header .header__header__menu .menu__link {
+    padding: 9px 8px 9px 8px;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .header__header .header__header__menu .menu__link a {
+    color: white;
+  }
+  .header__header .header__header__menu .menu__link__button {
+    padding: 0 0 0 8px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .header__header .header__header__menu .menu__link__button a {
+    color: #000;
+  }
+  .header__header .header__header__menu .menu__link__button button {
+    border-radius: 30px;
+    background: rgb(158, 19, 19);
+    font-size: 21px;
+    margin: 9px 0 0 0;
+  }
+  .header__header .header__header__menu .menu__link__button button p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 17px;
+    padding: 5.5px 14.5px;
+    font-weight: bold;
+    color: white;
+  }
+  .header__header .Active {
+    left: 0;
+  }
+}

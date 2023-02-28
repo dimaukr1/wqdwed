@@ -1,0 +1,112 @@
+.header__footer .header__footer__grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+}
+.header__footer .header__footer__grid__block__title {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0 0 19px 0;
+}
+.header__footer .header__footer__grid__block__text {
+  font-size: 22px;
+  line-height: 26.4px;
+}
+.header__footer .header__footer__grid__block img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__footer__grid__flex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__footer__grid__flex__1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1006px) {
+  .header__footer__grid__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__footer__grid__flex__1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.body__header__grid__slider {
+  background: rgb(255, 166, 0);
+  /* width: 100%; */
+  max-width: 483px;
+  /* height: 300px; */
+  text-align: center;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.body__header__grid__lineslider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgb(255, 166, 0);
+  position: relative;
+  left: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  text-align: center;
+}
+
+.body__header__grid__lineslider img {
+  width: 161px;
+  padding: 0 5px;
+  height: 42px;
+}
+
+.body__header__grid__lineslider__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body__header__grid {
+  background: rgb(255, 166, 0);
+}
+
+.slider__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

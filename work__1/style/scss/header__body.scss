@@ -1,0 +1,64 @@
+.header__body {* {
+	overflow-y: hidden;
+   }
+   img {
+    height: 100%;
+                width: 100%;
+                object-fit: cover;
+   }
+    &__content {
+        background:  rgb(255, 166, 0);
+        
+    }
+    &__flex {
+        display: grid;
+       grid-template-columns: auto auto;
+        &__title {
+            align-self: center;
+            font-size: 45px;
+            line-height: 54px;
+        }
+        .header__body__flex__img {
+            background: #454;
+        }
+        .header__body__flex__title__button {
+            border-radius: 30px;
+            background:  rgb(158, 19, 19);
+            margin: 20px 0 0 0;
+        }
+        .header__body__flex__title__button p  {
+             padding: 19px 42px;
+             color: white;
+             font-size: 29px;
+
+        }
+        .header__body__flex__title__button p {
+            
+        }
+    }
+
+}
+@media(max-width: 1000px) {
+    .header__body__flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width: 854px) {
+    .header__body__flex {
+    .header__body__flex__title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+    .header__body__flex__title__button {
+width: 100%;
+text-align: center;
+margin: 20px 0 30px 0;
+    }
+    .header__body__flex__title__button p {
+        font-size: 24px; 
+        
+    } 
+}
+}
